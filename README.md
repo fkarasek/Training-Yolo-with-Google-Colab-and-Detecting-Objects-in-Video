@@ -49,6 +49,7 @@ the same name, but with .txt-extension, and put to file: object number and objec
 for each object in new line: ```<object-class> <x> <y> <width> <height>```
 
 The coordinates of the object must be normalized as follows:
+
 Object-class: an integer between 0 and n-1 classes corresponding to the classes.names file of object names. 
 
 x: x-coordinate of object in pixels / pixel width of entire image
