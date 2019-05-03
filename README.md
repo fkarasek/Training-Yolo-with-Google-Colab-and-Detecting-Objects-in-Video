@@ -39,7 +39,7 @@ of the filters. I noted which ones I changed in a comment in the uploaded cfg fi
 <a name="clean"></a>
 ## 2. Download and Clean Data
 
-The images, annotations, mp4, as well as the output video and files can be found [here](https://drive.google.com/drive/folders/11gPddDkQqm7pukpkgAksrHGJUR2QluEf?usp=sharing)
+The images, annotations, mp4, as well as the output video and files can be found [here.](https://drive.google.com/drive/folders/11gPddDkQqm7pukpkgAksrHGJUR2QluEf?usp=sharing)
 When we examine the dataset more closely, we see that the annotations are not in the form that we need them to be in. 
 Furthermore, there appears to be 513 images and only 360 annotation files. This means we must filter out the images that 
 have associated annotations. 
@@ -50,9 +50,13 @@ for each object in new line: <object-class> <x> <y> <width> <height>
 
 The coordinates of the object must be normalized as follows:
 Object-class: an integer between 0 and n-1 classes corresponding to the classes.names file of object names. 
+
 x: x-coordinate of object in pixels / pixel width of entire image
+
 y: y-coordinate of object in pixels / pixel height of entire image
+
 width: object width in pixels / pixel width of entire image
+
 height: object height in pixels / pixel height of entire image
 
 An example image1.jpg would have an associated annotation image1.txt with the following format:
@@ -121,7 +125,7 @@ final_yolo.py file. Copy it into the darknet directory and in your command line 
 $ python3 final_yolo.py --video=sample.mp4
 ```
 
-The video output that I got can be seen [here](https://drive.google.com/drive/folders/11gPddDkQqm7pukpkgAksrHGJUR2QluEf?usp=sharing)
+The video output that I got can be seen [here.](https://drive.google.com/drive/folders/11gPddDkQqm7pukpkgAksrHGJUR2QluEf?usp=sharing)
 It isn't perfect, but it is my first attempt at training. I had to make some very slight corrections to the alignent of 
 the bounding boxes. This discrepancy is likely due to either a floating point error or a miscalculation in transferring the 
 data to YOLO format. When converting the JSON annotations, I assumed that the x and y coordinates were the exact centers of
