@@ -46,7 +46,7 @@ have associated annotations.
 
 The annotation format for YOLO needs to be .txt-file for each .jpg-image-file - in the same directory and with 
 the same name, but with .txt-extension, and put to file: object number and object coordinates on this image, 
-for each object in new line: <object-class> <x> <y> <width> <height>
+for each object in new line: '<object-class> <x> <y> <width> <height>'
 
 The coordinates of the object must be normalized as follows:
 Object-class: an integer between 0 and n-1 classes corresponding to the classes.names file of object names. 
